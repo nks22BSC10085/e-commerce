@@ -1,6 +1,9 @@
 <?php
+<<<<<<< HEAD
 
 $noProduct=true;
+=======
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
 if (isset ($_POST['submit'])) {
 
     //db_connection
@@ -23,6 +26,14 @@ if (isset ($_POST['submit'])) {
 
         $sql = "INSERT INTO `product` (`productName`, `productDescription`,`ProductPrice`, `image`) VALUES ('$productName', '$productDescription', '$ProductPrice', '$folder')";
         $result = mysqli_query($conn, $sql);
+<<<<<<< HEAD
+=======
+        if ($result) {
+            // alert('product added successfully');
+        } else {
+            // alert('some error is occured try again');
+        }
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     $conn->close();
 
 }
@@ -49,10 +60,17 @@ $result = mysqli_query($conn, $q);
 
 $cnt = mysqli_affected_rows($conn);
 if ($cnt == 0) {
+<<<<<<< HEAD
     $noProduct=true;
 } else {
     $noProduct=false;
     $show="1";
+=======
+    echo "No Member Found";
+} else {
+
+$show="1";
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
 }
 mysqli_close($conn);
 ?>
@@ -71,10 +89,14 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Add items</title>
+=======
+    <title>Todo List with Product Information</title>
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     <style>
         /* Basic styling */
         * {
@@ -92,13 +114,21 @@ mysqli_close($conn);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.925);
         }
 
+<<<<<<< HEAD
         .container h2 {
+=======
+        .container h2{
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
             font-size: 30px;
             margin: 5px;
         }
 
+<<<<<<< HEAD
         input[type="text"],
         .box {
+=======
+        input[type="text"], .box {
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
             width: calc(100% - 80px);
             padding: 10px;
             margin-bottom: 10px;
@@ -106,13 +136,21 @@ mysqli_close($conn);
             border-radius: 5px;
         }
 
+<<<<<<< HEAD
         .box {
+=======
+        .box{
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
             display: flex;
             justify-content: space-between;
             color: rgb(120, 120, 120);
         }
 
+<<<<<<< HEAD
         .button {
+=======
+        button {
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
             padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
@@ -121,12 +159,17 @@ mysqli_close($conn);
             cursor: pointer;
         }
 
+<<<<<<< HEAD
         .button:hover {
+=======
+        button:hover {
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
             background-color: #0056b3;
         }
 
         /* product style start */
 
+<<<<<<< HEAD
         .blankProductSection {
             display: flex;
             align-items: center;
@@ -140,6 +183,8 @@ mysqli_close($conn);
             font-size: 30px;
         }
 
+=======
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
         #productList {
             margin: auto;
         }
@@ -219,7 +264,11 @@ mysqli_close($conn);
             border-radius: 15px;
         }
 
+<<<<<<< HEAD
         .deleteBtn a {
+=======
+        .deleteBtn a{
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
             color: black;
             font-weight: 600;
             font-size: 14px;
@@ -246,9 +295,12 @@ mysqli_close($conn);
 </head>
 
 <body>
+<<<<<<< HEAD
     <?php
     include_once('_navbar.php');
     ?>
+=======
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     <div class="container">
         <h2>Add products</h2>
         <form action="vendor.php" method="POST" enctype="multipart/form-data">
@@ -256,6 +308,7 @@ mysqli_close($conn);
             <input type="text" id="productDescription" placeholder="Product Description" name="productDescription">
             <input type="text" id="ProductPrice" placeholder="Product Price" name="ProductPrice" required>
             <div class="box">upload Image<input type="file" name="image" id="image" class="image" required></div>
+<<<<<<< HEAD
             <button name="submit" class="button">Add Product</button>
         </form>
     </div>
@@ -264,6 +317,11 @@ mysqli_close($conn);
         echo '<div class="blankProductSection">Currently no any Item is present</div>';
        }
     ?>
+=======
+            <button name="submit">Add Product</button>
+        </form>
+    </div>
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     <div id="productList">
         <?php
         if ($show="1"){
@@ -279,7 +337,11 @@ mysqli_close($conn);
                 </div>
                <div class='productInfo'>
                     <div class='price'>$$x[3]</div>
+<<<<<<< HEAD
                     <button class='deleteBtn'><a href='delete.php?pno=$x[0]'>Delete Item</a></button>
+=======
+                    <button class='deleteBtn'><a href='delete.php?pid=$x[0]'>Delete Item</a></button>
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
                 </div>
             </div>";
             }

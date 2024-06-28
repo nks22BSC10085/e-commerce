@@ -1,7 +1,11 @@
 /* Home page css */
 
 * {
+<<<<<<< HEAD
     font-family: sans-serif;
+=======
+    font-family: "Mukta", sans-serif;
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     padding: 0;
     margin: 0;
 }
@@ -28,7 +32,11 @@ header,
 
 .navbar .logo {
     font-size: 40px;
+<<<<<<< HEAD
     color: #fc6a03;
+=======
+    color: black;
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     font-weight: 700;
     margin: 10px;
 }
@@ -87,6 +95,7 @@ header,
 
 .wishlist{
     font-size: 20px;
+<<<<<<< HEAD
     color: red;
     border: none;
 }
@@ -98,6 +107,11 @@ header,
     border-radius: 50%;
 }
 
+=======
+    border: none;
+}
+
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
 /* header css end */
 
 
@@ -109,7 +123,11 @@ header,
 }
 
 .firSecComponent {
+<<<<<<< HEAD
     height: 250px;
+=======
+    height: 180px;
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
     background-color: rgba(244, 178, 57, 0.389);
 }
 
@@ -117,8 +135,12 @@ header,
     font-size: 35px;
     text-align: center;
     font-weight: 200;
+<<<<<<< HEAD
     padding: 8vmin 0vmin 4vmin 0vmin;
     margin: 4vmin;
+=======
+    margin: 3vmin;
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
 }
 
 .firSecComp2 {
@@ -259,6 +281,7 @@ header,
 /* third section css end */
 
 
+<<<<<<< HEAD
 
 /* footer css start */
 
@@ -316,3 +339,25 @@ footer {
 
 /* footer css end*/
 
+=======
+/* footer css */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+    height: 100px;
+}
+
+.heart {
+    color: red;
+    font-size: 50px;
+    margin: 20px;
+}
+
+
+/* footer css end*/
+>>>>>>> db3d1aa658a9ec26b7ed10cc8df0b616e57778a9
